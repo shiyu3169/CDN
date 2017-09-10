@@ -1,0 +1,70 @@
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "HTTP/update_cache.py", line 47, in compress_forever
+    compress(web_names.get())
+  File "HTTP/update_cache.py", line 40, in compress
+    f = open('./HTTP/zip/' + name + '.Z', 'wb')
+IOErroException in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "HTTP/update_cache.py", line 47, in compress_forever
+    compress(web_names.get())
+  File "HTTP/update_cache.py", line 40, in compress
+    f = open('./HTTP/zip/' + name + 'Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/lib/pytException in thread Thread-3:
+Traceback (most Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "HTTP/update_cache.py", line 47, in compress_forever
+    compress(web_names.get())
+  File "HTTP/update_cache.py", line 40, in compress
+    f = open('./HTTP/zip/' + name + '.Z', 'wb')
+IOError: [Errno 13] Permission denied: './HTTP/zip/Australia.Z'
+
+/2014_in_film.Z'
+
+ compress_forever
+    compress(web_names.get())
+  File "HTTP/update_cache.py", line 37, in compress
+    file = download(name)
+  File "HTTP/update_cache.py", line 26, in download
+    conn.request("GET", '/wiki/' + name, headers={'User-Agent': 'Python httplib'})
+  File "/usr/lib/python2.7/httplib.py", line 1017, in request
+    self._send_request(method, url, body, headers)
+  File "/usr/lib/python2.7/httplib.py", line 1051, in _send_request
+    self.endheaders(body)
+  File "/usr/lib/python2.7/httplib.py", line 1013, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 864, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 826, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 807, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 571, in create_connection
+    raise err
+error: [Errno 110] Connection timed out
+
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "HTTP/update_cache.py", line 47, in compress_forever
+    compress(web_names.get())
+  File "HTTP/update_cache.py", line 40, in compress
+    f = open('./HTTP/zip/' + name + '.Z', 'wb')
+IOError: [Errno 13] Permission denied: './HTTP/zip/List_of_Arrow_episodes.Z'
+
